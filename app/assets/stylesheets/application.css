@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+ .flat {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(50% - 20px);
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.flat h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.flat p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.flat .description {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.flat .price {
+  font-weight: bold;
+}
+
+.flat .guests {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
